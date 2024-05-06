@@ -1,4 +1,6 @@
+import { Search } from '../components/Icons';
 import { Navbar } from '../components/Navbar';
+import { SearchPokemon } from '../components/SearchPokemon';
 import viteLogo from '/vite.svg'
 
 import { useEffect, useState } from 'react'
@@ -35,6 +37,7 @@ function App() {
   return (
     <>
       <Navbar/>
+      <SearchPokemon/>
       {
         pokemons.map(pokemon =>{
           return (
