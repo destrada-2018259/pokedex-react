@@ -1,8 +1,13 @@
-# React + Vite
+# React Pokedex
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+FrontEnd App made with Vite, fetching PokeApi to get the data. I made this project because I recently completed the Pokedex from Paldea in Pokemon Scarlet.
 
-Currently, two official plugins are available:
+## Features
+* Dark Mode
+* Search by Name or Number
+* Access to Pokemon Detail
+* Infinite Scroll
+* Single Page Application
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Resources
+* PokeApi: https://pokeapi.co/
