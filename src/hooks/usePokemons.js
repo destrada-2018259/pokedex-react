@@ -52,7 +52,7 @@ export default function usePokemons() {
     }
 
     const findPokemon = async(search) =>{
-        const url = `'${URL_ENDPOINT}'${search.toLocaleLowerCase()}`
+        const url = `${URL_ENDPOINT}${search.toLocaleLowerCase()}`
         return await fetchPokemon(url)
     }
 

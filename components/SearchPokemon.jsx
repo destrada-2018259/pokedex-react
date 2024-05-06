@@ -7,7 +7,7 @@ export const SearchPokemon = ({search, setSearch, searchPokemon}) => {
     <>
       <h3 className='title'>More than 800 Pokemon, look for your favorite!</h3>
       <form className='container-search' onSubmit={searchPokemon} >
-        <input type="text" placeholder='Find your Pokemon' className='input-search' 
+        <input type="text" placeholder='Find your Pokemon by name or #' className='input-search' 
           value={search}
           onChange={(e) => setSearch(e.target.value)}
         />

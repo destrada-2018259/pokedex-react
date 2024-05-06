@@ -1,5 +1,5 @@
 nav {
-    background-color: #f5db13;
+    background-color: #d60e00;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -39,7 +39,7 @@ nav > svg{
     height: 1.5rem;
     border-radius: 1rem;
     background-color: white;
-    transition: .5s;
+    transition: .0.2s;
 
 }
 

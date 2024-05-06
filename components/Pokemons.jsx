@@ -11,28 +11,28 @@ import { SearchPokemon } from './SearchPokemon';
 export const Pokemons = () => {
 
   const { pokemons, morePokemon, viewMore, findPokemon } = usePokemons()
-  const [show, setShow] = useState({show : false, pokemon: {}})
+  const [show, setShow] = useState({ show: false, pokemon: {} })
   const [search, setSearch] = useState('')
 
-  const viewPokemon = (pokemon) => setShow({show: true, pokemon})
+  const viewPokemon = (pokemon) => setShow({ show: true, pokemon })
   const hidePokemon = () => {
-    setShow({show: false, pokemon: {}})
+    setShow({ show: false, pokemon: {} })
     setSearch('')
   }
 
-  const searchPokemon = async(e) =>{
+  const searchPokemon = async (e) => {
     e.preventDefault();
-    
-    if(!search) return
-    
+
+    if (!search) return
+
     const pokemon = await findPokemon(search)
-    setShow({show:true, pokemon})
+    setShow({ show: true, pokemon })
   }
 
   return (
     <>
-    <PokemonDetail {... show} close ={hidePokemon} />
-    <SearchPokemon search={search} setSearch={setSearch} searchPokemon={searchPokemon} />
+      <PokemonDetail {...show} close={hidePokemon} />
+      <SearchPokemon search={search} setSearch={setSearch} searchPokemon={searchPokemon} />
       <InfiniteScroll
         dataLength={pokemons.length}
         next={morePokemon}
