@@ -2,6 +2,10 @@
 
 FrontEnd App made with Vite, fetching PokeApi to get the data. I made this project because I recently completed the Pokedex from Paldea in Pokemon Scarlet.
 
+## App:
+
+https://pokedex-react-lemon.vercel.app/
+
 ## Preview:
 
 ![Screenshot 2024-05-06 134417](https://github.com/destrada-2018259/pokedex-react/assets/106627911/a5fc8cb4-f27f-49cd-91b7-000b69773e2e)
