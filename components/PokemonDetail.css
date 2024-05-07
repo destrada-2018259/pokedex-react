@@ -182,3 +182,88 @@
     
     }
 }
+
+@media screen and (max-width: 480px) {
+
+    .modal-body{
+        background-color: var(--back);
+        width: 40%;
+        min-width: 350px;
+        height: 37rem;
+        border-radius: 20px;
+        position: absolute;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img-container{
+        display:flex;
+        flex-direction: column;
+        place-items: center;
+        
+    }
+
+    .img-detail{
+        width: 100px;
+        aspect-ratio: 8/10;
+        background-color: var(--pokeback);
+        border-radius: 25px;
+    }
+
+    .data{
+        display: flex;
+        flex-direction: column;
+        padding: 0 .5rem;
+        gap: 10px;
+        flex: 1;
+    }
+
+    .stats > section{
+        display: flex;
+        flex-direction: column;
+        text-transform: capitalize;
+    
+    }
+
+    .data .title{
+        margin: 0;
+        text-transform: capitalize;
+        font-weight: bold;
+        font-size: 2rem;
+    }
+    
+    .title-section{
+        font-weight: 400;
+    }
+    
+    .data section{
+        background-color: var(--card);
+        border-radius: 10px;
+        padding: 5px;
+        box-shadow: 4px 4px 4px #21212120;
+    }
+    
+    .stats{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    
+    .stats > section{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-transform: capitalize;
+        font-size: 1rem;
+    }
+    
+    .points{
+        border: 2px solid #00aeff;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        display: grid;
+        place-items: center;
+    }
+}

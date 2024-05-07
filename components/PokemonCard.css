@@ -33,3 +33,19 @@
     width: 60%;
     text-transform: capitalize;
 }
+
+@media screen and (max-width: 400px) {
+
+    .pokemon-title{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #454a54;
+        color: #eee;
+        font-weight: 600;
+        padding: 4px 8px;
+        border-radius: 10px;
+        width: 80%;
+        text-transform: capitalize;
+    }
+}
